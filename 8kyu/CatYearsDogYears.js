@@ -33,8 +33,8 @@ const dogCatAge = (humanYears) => {
             catYears = 15
             dogYears = 15
         }else if (humanYears === 2){
-        catYears = 24
-        dogYears = 24
+            catYears = 24
+            dogYears = 24
         }else if (humanYears >= 3){
             catYears += 4
             dogYears += 5
