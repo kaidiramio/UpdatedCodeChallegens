@@ -5,4 +5,4 @@
 
 Daily code challenges from [codewars.com](https://www.codewars.com/)! 
 
-Diffuculty ranges from 8kyu - 1kyu, 1 being the most difficult. I started at 8kyu. 
+Diffuculty ranges from 8kyu - 1kyu, 1 being the most difficult.
