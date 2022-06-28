@@ -14,4 +14,4 @@ function makeUpperCase(str) {
       let newString = str.toUpperCase()
       
       return newString
-    }
+}
