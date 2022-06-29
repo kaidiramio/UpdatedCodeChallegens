@@ -1,12 +1,19 @@
-// descending Order
+// Descending Order -  https://www.codewars.com/kata/5467e4d82edf8bbf40000155
+
+// DESCRIPTION:
+// Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+// Examples:
+// Input: 42145 Output: 54421
+
+// Input: 145263 Output: 654321
+
+// Input: 123456789 Output: 987654321
 
 function descendingOrder(n){
     return parseInt((n+'').split('').sort().reverse().join(''))
+
+    // parseInt returns a string of n
+    // split splits into array -> sort the array -> reverse -> join array together like 1234 (no space)
 }
 
-// parseInt returns a string 
-// split splits into array
-// reverse reverse array
-// join with join them together like 1234 (no space)
-
-// going over this again in more depth
