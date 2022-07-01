@@ -1,4 +1,9 @@
-// Shortest Word -7kyu
+// Shortest Word -7kyu ; https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9
+
+// DESCRIPTION:
+// Simple, given a string of words, return the length of the shortest word(s).
+
+// String will never be empty and you do not need to account for different data types.
 
 function findShort(s){
     //   define variable and we can use split method w/parameter
@@ -8,7 +13,7 @@ function findShort(s){
       let smallest = arr[0];
       
     //   loop through the legnth of each character
-      for (var i = 0; i < arr.length; i++) {
+      for (let i = 0; i < arr.length; i++) {
         
     //     if arr's length is less than smallest the smallest = arr[i]
         if(arr[i].length < smallest.length){
@@ -19,3 +24,5 @@ function findShort(s){
     //   retutn the smallest word 
       return smallest.length;
 }
+
+
