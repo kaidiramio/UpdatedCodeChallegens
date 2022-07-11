@@ -5,9 +5,24 @@
 
 // Return True if yes, False otherwise :)
 
+// parameters for bullets and dragons 
+// each dragon takes 2 bullets to experience defeat
 
+// pass parameters bullets and dragons
 function hero(bullets, dragons){
-    return bullets >= dragons * 2
-    
-  //   each dragon takes 2 bullets to defeat 
+
+  // return bullets comparison >= dragons multiplied by 2 since the dragons take 2 bullets
+  return bullets >= dragons * 2
+}
+
+
+// OR 
+
+hero = (bullets, dragons) =>{
+  if (bullets/2 >= dragons) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }

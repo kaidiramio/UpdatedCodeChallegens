@@ -11,6 +11,8 @@
 
 function stringToArray(string){
 
+  // use split method since it creates array
+
 	let strArray = string.split(' ')
 //   ('') = split characters in words 
 //   (' ') = split words in string

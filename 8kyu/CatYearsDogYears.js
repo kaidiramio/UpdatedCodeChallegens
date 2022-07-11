@@ -19,29 +19,23 @@
 // +9 dog years for second year
 // +5 dog years for each year after that
 
-const dogCatAge = (humanYears) => {
-    // return humanYears, catYears, dogYears
-    let catYears = 0
-    let dogYears = 0
-
-    // if humanYears is x catYears is y 
-    // if humanYears is x dogYears is y
-    // conditionals for age
+const humanYearsCatYearsDogYears = (humanYears) => {
+    let catYears = 0;
+    let dogYears = 0;
     
-    for (let i = 1; i < humanYears.length; i++){
-        if (humanYears === 1){
-            catYears = 15
-            dogYears = 15
-        }else if (humanYears === 2){
-            catYears = 24
-            dogYears = 24
-        }else if (humanYears >= 3){
-            catYears += 4
-            dogYears += 5
-        }
+    for (let i = 1; i <= humanYears; i++) {
+      if (i === 1) {
+        catYears += 15;
+        dogYears += 15;
+      }
+      else if (i === 2) {
+        catYears += 9;
+        dogYears += 9;
+      }
+      else {
+        catYears += 4;
+        dogYears += 5;
+      }
     }
-    return (humanYears, dogYears, catYears)
+    return [humanYears,catYears,dogYears];
 }
-
-dogCatAge(6)
-

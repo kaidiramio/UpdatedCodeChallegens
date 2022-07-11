@@ -23,4 +23,13 @@ function booleanToString(b){
   }
 }
 
+function boolToWord( bool ){
+  if (bool){
+    return 'Yes'
+  }else{
+    return "No"
+  }
+  
+  //...
+}
   // takes parameter and sets a conditional that returns a string 
