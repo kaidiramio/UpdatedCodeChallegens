@@ -10,10 +10,23 @@
 
 // Input: 123456789 Output: 987654321
 
-function descendingOrder(n){
-    return parseInt((n+'').split('').sort().reverse().join(''))
+// non-negative integer = n as argument and n is param
+// using methods parseInt (parses a string argument and returns an integer) split(Converts string into an array of strings), sort(sorts the elements of an array), reverse(reverses the order of the elements in an array), and join(creates and returns a new string by concatenating all of the elements in an array) we can accomplish this
+// return the integer with digits in decending order
+// example input 42145 output 54421, input 64582 output 86542
 
-    // parseInt returns a string of n
-    // split splits into array -> sort the array -> reverse -> join array together like 1234 (no space)
+function descendingOrder(n){
+    return (parseInt(String(n).split('').sort().reverse().join('')))
+
+    // or (n + '')
+
+    // parseInt string returns a string of n " 42145" takes string of (n)
+    // split splits into array ["4", "2", "1", "4", "5"]
+    
+    // -> sort the array -> ["1", "2", "4", "4", "5"]
+
+    // reverse -> ["5", "4", "4", "2", "1"]
+    
+    // join array together like 1234 (no space) "54421"
 }
 
